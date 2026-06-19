@@ -1,0 +1,230 @@
+0:31 : Amanda Chenery : Duo one introduction and architecture. Today we're gonna learn how to prepare the data template, submit a number and submit an upload request. We're gonna look at the data journey and understand how our data moves through the systems and we're gonna prepare you to set up for success.
+0:51 : Amanda Chenery : By defining the best practices for seamless data processing.
+1:02 : Amanda Chenery : Why do we use manual uploads? The first point is it is a way of.
+1:11 : Amanda Chenery : Is a user friendly template that allows our users to capture data correctly.
+1:18 : Amanda Chenery : In the precise information relating to their use case. This takes away any.
+1:26 : Amanda Chenery : Manual errors or guesswork by trying to guide you through using a single template. What we also want to be able to do is ensure that we capture quality data.
+1:39 : Amanda Chenery : That is.
+1:42 : Amanda Chenery : Used by our marketing attribution system by our reporting teams and sent down to the BDC for sellers and also to be included within the lead scoring model.
+2:01 : Amanda Chenery : Firstly, when we set up our manual upload template, we have to determine whether the data we are capturing from regarding our customers are the lead category. So the lead category can be either a hand raiser where the contacts is explicitly requested to be contacted by Cisco.
+2:23 : Amanda Chenery : For this particular.
+2:25 : Amanda Chenery : Topic or non hand raisers where a member of Cisco will.
+2:32 : Amanda Chenery : Will define that a contact should be captured. Once we've defined our lead category, we will prepare our manual upload template. If you need help with your manual upgrade, man, if you need help, preparing.
+2:52 : Amanda Chenery : Your news template, then fill out the demand intake form and someone from MRM will work with you to help with any guidelines. Also use this template if you are, uploading a large volume of data, just to ensure that we can work with the VDC.
+3:13 : Amanda Chenery : To make sure that they have capacity and resources available. If you filled out your manual upload template and you don't need any help, then.
+3:27 : Amanda Chenery : Upload your file to the manual request portal process and MRM will upload that data for you, and tell you when that information has been processed.
+3:39 : Amanda Chenery : So a high level process flow of what happens to your data.
+3:44 : Amanda Chenery : When you build out your muse templates and you determine whether you need help or not, if you need help filling out the news templates, fill out the VDC intake form and MRM will work with you to help.
+3:59 : Amanda Chenery : Prepare that data. If you are confident in your data preparation, just upload your, your data file into the manual data upload portal and MRM, we'll take that information and load it into the demand intake tool. When the demand intake tool has taken that information.
+4:20 : Amanda Chenery : It will be passed through to Trey. Trey will then look at the data and run validations to make sure that information is all correct. At that point, we start processing the data within Trey. When Tray has finished its processing like adding in extra fields for campaign tagging.
+4:40 : Amanda Chenery : Tracking IDs and running suppression rules, a message will be sent back to the demand intake tool where we can see how many records have passed and how many have failed due to suppression rules. You'll also receive an email with that same information.
+5:00 : Amanda Chenery : As trade processes the information determining on the use case that you have selected in your muse template, determines whether data will be sent through to the VDC as hand raisers and sales follow up or if they are non hand raisers and adjust pass back into Eloqua to be included within the lead scoring model.
+5:21 : Amanda Chenery : Also note that all hand raisers are also passed through to Eloqua to be added to the lead score model to capture that transaction. As soon as a transaction hits Eloqua, that information will be processed as a transaction and passed through the lead score in engine. And.
+5:40 : Amanda Chenery : If that scoring engine scores high, the information will go back to trade to be passed through as.
+5:48 : Amanda Chenery : A non hand raiser through to the VDC.
+5:55 : Amanda Chenery : Detailed architecture of this is that when the file is uploaded and trace starts the process the file, we determine the lead category. If this is a hand raiser, then a Cisco proprietary events paid leads trade shows or webinars, we will pass that information through to.
+6:16 : Amanda Chenery : To Salesforce directly as long as it's past the pressure rules. If it is a non hand raiser, oh sorry, if it's also hand raiser, we also pass that information to the Eloqua transaction CDO to be included in the lead scoring model. For non hand raisers, we.
+6:36 : Amanda Chenery : For trade shows and webinars, we pass that information through to the Eloqua registration CDO, and again, this is captured within the Eloqua lead score model. In both instances.
+6:50 : Amanda Chenery : The transactional data is passed through to CDF, and in both cases they passed through to the lead scoring model. If the record scores high, that information will be passed back.
+7:07 : Amanda Chenery : To Trey processed to ensure that it shouldn't be suppressed or is sales ready. And as a scored lead, it will pass through to Salesforce.
+7:21 : Amanda Chenery : We talked about the lead score model, the lead scoring model at a high level, is broken down into two parts. We have a profile that looks at information relating to the customer and we have engagement which is implicit data, which is visits to websites and responsiveness to promotions.
+7:43 : Amanda Chenery : The data types that we use within our profiling engagement for our profile is explicit data, so it's factual information.
+7:52 : Amanda Chenery : Intentionally provided by the customer, and the engagement data is implicit data that is passively passively observed data and digital footprints that infers the customers intent or preference.
+8:06 : Amanda Chenery : So this is information such as they build out a form, et cetera. The data elements that we score for the profile is if you're a decision maker type. The decision maker type is determined within CDF relating to various different.
+8:25 : Amanda Chenery : Data elements a guide against your contact record. We also take into consideration your job level, job department, and your email domain type, whether it is a corporate email or a private. For our transaction engagements, we look at all event transactions, all forms submits, manual uploads, inbound traffi.
+8:45 : Amanda Chenery : And email activity.
+8:49 : Amanda Chenery : After capturing all of that information, a profile will be given a score of A to D And.
+8:56 : Amanda Chenery : A number aligned in twenty five.
+9:00 : Amanda Chenery : Points increments. Our engagement score is given a number of one to four. And again, in twenty five point increments. Depending on what your score is as a combination of a profile score B and an engagement score two determines whether you are a high scor.
+9:20 : Amanda Chenery : Lead or a low scored lead. Load scored leads remain in Eloqua and high scored leads are past back to Trey and sent through to Salesforce as a lead.
+9:34 : Amanda Chenery : Again, more detailed information of what is actually scored within the score model.
+9:42 : Amanda Chenery : And that's the end of that section. Module two preparation and prerequisites. The eligible data sources that we currently have for manual uploads for hand raisers is third party trade shows, work first party webinars and third party webinars.
+10:01 : Amanda Chenery : Cisco proprietary events and paid leads. For non hand raisers, the only use case that we are currently supporting is trade shows and webinars. Please note with webinars, blood factory data and Webex registrations are automatically integrated within Eloqua and added to the scoring model through that.
+10:22 : Amanda Chenery : Format. Webex.
+10:25 : Amanda Chenery : Attendance records can be uploaded via the manual upload process, but always ensure that your EID aligns to your.
+10:41 : Amanda Chenery : Registration. So that we can align the two together. Any other third party webinars, webinars can be uploaded through the manual upload process. We did not upload non hand raisers for Cisco proprietary events or paid leads. Cisco proprietary events are.
+11:01 : Amanda Chenery : Automatically passed through from Cvent and the event status of tables through to Eloqua and included in lead score and that from that route. We also don't have paid leads because if we have paid leads, they should all be hand raisers and a non hand raiser paid.
+11:22 : Amanda Chenery : Lead is not a standard use case. You'll also notice that we no longer have any content syndication going through manual upload processes. Manual content syndication is automated through the integrate tool, again, directly into Eloqua and there's no need for a manual.
+11:42 : Amanda Chenery : Upload.
+11:46 : Amanda Chenery : The next couple of slides will show, give you a decision matrix as to whether you should be, what business and data sources you should be selecting.
+12:02 : Amanda Chenery : You've been selecting. The first determination that you have to make is whether the customer actually asked to be contacted as a follow up from this particular.
+12:16 : Amanda Chenery : Marketing initiative. If they are, if they have, then you will be let uploaded hand raisers. If they did not, you will be uploading non hand raisers. If we first of all look at hand raisers, we determine has this contact been captured through an event? If it has.
+12:36 : Amanda Chenery : Have these contacts.
+12:39 : Amanda Chenery : Been collected from as Cisco owned event. If they have, then you'll be uploading hand raisers via a data source Cisco proprietary event.
+12:51 : Amanda Chenery : If these contacts have not been contact collected from a Cisco owned event or are they from all third party webinar or a third party trade show? If so, you will be uploading that information as a hand raiser or a non hand raiser. Oh, sorry.
+13:08 : Amanda Chenery : You'll be uploading those as hand raisers and using the data source of webinar and trade show.
+13:16 : Amanda Chenery : If your information had not been captured through an event.
+13:22 : Amanda Chenery : We determine if the, if this contact's been captured as part of the paid leads activity, if they have, you'll be uploading hand raisers with the data source of paid leads.
+13:36 : Amanda Chenery : If you are unable, if there is no use case to support your requirement, please contact Amanda Chennery at A Chenry at Cisco dot com to review.
+13:48 : Amanda Chenery : How to upload your data. If you are uploading non hand raisers, we would, if you've, if you're not uploading non hand raisers, and you're.
+14:05 : Amanda Chenery : And your contacts haven't been captured by event, again, please contact Amanda to determine what we can do with your data load to ensure that it is captured correctly in any attribution models and lead score models.
+14:22 : Amanda Chenery : If these non hand raisers have been captured from a Cisco owned event, there is no need to upload any data that information will automatically pass through to Eloqua from Cvent Stover and Rainfocus.
+14:40 : Amanda Chenery : If the contacts have been captured from a third party webinar, you will upload the data as a non hand raiser webinar. If not, it's from a trade show and you will upload as a non hand raiser trade show.
+14:54 : Amanda Chenery : Once you've determined your data sources, we want to ensure that we have the correct information to load and we comply to Cisco proprietary privacy. Cisco privacy information. Unless you are doing a first party.
+15:14 : Amanda Chenery : Event upload for Cisco proprietary events, you'll need a privacy assessment. This ensures that we have, audits in place to make sure that we have captured any.
+15:31 : Amanda Chenery : Privacy.
+15:34 : Amanda Chenery : Opt in information correctly and in line with Cisco privacy rules. You'll also need a campaign and tagging campaign tagging and tracking IDs. But each upload you should have a new.
+15:53 : Amanda Chenery : Campaign that you should have a new activity ID. If you have already created your activity ID, just utilize the same one. But the activity ID should represent.
+16:08 : Amanda Chenery : Should represent the marketing initiative that you are actually completing. Take note that the activity ID.
+16:17 : Amanda Chenery : Take note that the activity ID is also sound to sellers and gives them information to start a conversation. Please ensure your activity ID name and description properly informs our sellers as to the marketing initiative.
+16:37 : Amanda Chenery : The contact actually engaged with.
+16:41 : Amanda Chenery : You should also have a drive to IDs drive to IDs are standard, and by each individual.
+16:50 : Amanda Chenery : Channel that we captured the information from.
+16:56 : Amanda Chenery : If you are aligning to an event, you will need an event ID that can can be created through the global meeting and events portal.
+17:09 : Amanda Chenery : Once you have your IDs and you are ready to start filling out your muse template, if you need any help.
+17:16 : Amanda Chenery : Fill out the VDC intake form and M R M will help you, with any questions or if you have large VDC enablement or need general help. Once you've filled out your news template, you can use the manual upload.
+17:37 : Amanda Chenery : Request portal to upload your file and MRM will arrange that data to be processed through the systems.
+17:48 : Amanda Chenery : That's our high level process. Now how let's get into the details of how we fill out a template. First of all, there's some global formatting and validation rules about data categorization. We must ensure that we know where we're loading hand raisers or non hand.
+18:07 : Amanda Chenery : Hand raisers. If we are try and upload non hand raisers as hand raisers and push that information through to the VDC, we are violating our privacy rules and our customers privacy rules, which can lead to.
+18:27 : Amanda Chenery : Large fines. We can only pass information directly to the VDC as a hand raiser if the customer is explicitly requested to be contacted related to this event or action. By our sales team.
+18:53 : Amanda Chenery : The maximum size of the file is six megabytes, which should give you plenty of data to upload.
+19:01 : Amanda Chenery : This is really for MRM, they'll only use when they upload the file, they will take a particular sheet from your Muse template and just upload that one individual sheet. Ensure you are uploading the right use case. The use cases are very important because that information will align data in the.
+19:22 : Amanda Chenery : HVE and marketing source pipeline attribution models. An activity and I drive to IDs are mandatory for all data uploads, but you will notice that we have standardized the drive to uptieth ID or trade shows and that field is actually hidden.
+19:42 : Amanda Chenery : One thing to remember when you are adding data to the muse template, don't cut and paste the data.
+19:48 : Amanda Chenery : And never delete any rows.
+19:54 : Amanda Chenery : Starting off with your template, if you are loading hand raisers, the first section of the template will ask you what you're uploading today. By this point you should know whether you are loading hand raisers or non hand raisers, and we give you a warning once you've selected the option to tell you that you are raising handwrit You are loading hand ra.
+20:15 : Amanda Chenery : Remember hand raisers go directly to the VDC and the customer must have given explicit permission for.
+20:24 : Amanda Chenery : For sales to follow up directly after this communication. We then select our data sources and at the bottom we will see a summary which will tell MRM which use cases to actually upload in the temp in the, actual demand intake tool.
+20:47 : Amanda Chenery : If we're looking at webinars, we actually have to have a privacy ID going back, going back to Cisco proprietary events, because this is owned data, we do not need a privacy update a privacy ID for any Cisco proprietary event hand raisers.
+21:07 : Amanda Chenery : For webinar ingestion, if we are loading hand raisers and non hand raisers, you do need a privacy ID, and you will also be asked to question whether you have run your registration through C vent. If you run your registration through C vent.
+21:26 : Amanda Chenery : There is no need to upload any data.
+21:32 : Amanda Chenery : AH.
+21:36 : Amanda Chenery : Upload any data.
+21:40 : Amanda Chenery : Because that information will have passed through automatically via C event. If you did not run your webinar through.
+21:52 : Amanda Chenery : C vent, then you can continue. Also note as previously stated, par factory data does not need to be uploaded by the manual upload. It is automatically integrated into Eloqua and will be included in any attribution models and lead s.
+22:12 : Amanda Chenery : Models. Webex registrations follow the same path. They automatically go into Eloqua and are available for attribution reporting and lead scoring. However, Webex attendance records can be uploaded by the manual upload template.
+22:32 : Amanda Chenery : Again, for trade shows and paid leads, we do actually need a privacy ID.
+22:41 : Amanda Chenery : The next section is where we start to map our data. And during this during these sections where you tell us more about your campaign will automatically populate fields on the next temp on the next worksheet.
+23:00 : Amanda Chenery : First of all, we need a transaction date. Manual uploads must be uploaded within thirty days of an event after thirty days, the it is standard practice that the leads are no longer viable, so we do not upload them. We have system related rules that will ensure.
+23:21 : Amanda Chenery : Will be rejected if they are loaded after thirty days. You'll then be asked information about your tagging and tracking IDs. You will have the option for your activity ID and drive to IDs. Did you have one activity that aligns to all the records in the fi.
+23:42 : Amanda Chenery : Or are you loading data where there are multiple activity IDs aligned to each row? If you select the option for I have one activity that should be aligned to all records, you will be asked for that activity ID and it will automatically populate against each row on your template.
+24:03 : Amanda Chenery : The same thing will happen with our drive to IDs, and again, that information will automatically be populated on our sheets.
+24:12 : Amanda Chenery : Offer IDs are an optional field for paid leads. If you want to capture that information, again, you can select the option to align the same offer to every record and that will automatically be populated on your template. If however, you select the option that you have a mixture of your ID.
+24:33 : Amanda Chenery : Then no single ID will be replaced and on your template on the next, on your next worksheet, the data upload the.
+24:44 : Amanda Chenery : The details, whatever it's called template, will ask you for each row of information to ensure that an ID is aligned in against each individual row manually.
+24:59 : Amanda Chenery : For trade show and booth compliance, for our trade show, there is a new policies in place where if a privacy sign is is is displayed prominently within the booth with predefined terminolog.
+25:19 : Amanda Chenery : We can captchat that information within the muse template. What this will do will automatically opt our, op the customer in for future email communications and future phone communications.
+25:39 : Amanda Chenery : This information will automatically be updated against your.
+25:46 : Amanda Chenery : Will automatically be updated on the template for you behind the scenes.
+25:51 : Amanda Chenery : If you did not display the privacy booth, then we have to capture the any email or phone opt ins.
+26:00 : Amanda Chenery : Separately. Remember opt ins are very different from the determination of a hand raiser or a non hand raiser. An opt in allows us to communicate for marketing purposes to the customer for future marketing. Again, we do have to have an audit that we, the customer.
+26:20 : Amanda Chenery : Has opted in because we are liable for other fines. The opt in question is for future marketing communications. If you select the option no, we will not be able to.
+26:34 : Amanda Chenery : Communicate to that customer in the future that anything.
+26:46 : Amanda Chenery : There's a couple of extra questions for trade shows when it is non hand raisers. If it's non hand raisers, we ask the question that did everybody that registered for this event attend it as well. If they did, we can select the option for yes everyone in this file attended, and they will be marked as being register.
+27:06 : Amanda Chenery : And attended. If not everyone in the.
+27:11 : Amanda Chenery : In the file registered, you can select no, and then on the data, data entry details against each row, you can indicate whether they just registered or if they registered and attended.
+27:30 : Amanda Chenery : When it comes to webinars with our webinars, we do have an offer ID as a mandatory field and an EID as an optional field.
+27:42 : Amanda Chenery : All webinars.
+27:46 : Amanda Chenery : All webinars will have an offer ID that relates to the actual webinar. It is important that you fill in your offer ID for a webinars so that we can see the overall success of, people that, of that webinar and who actually consumed it.
+28:24 : Amanda Chenery : Instead in some instances we do have an option where first party events were not run through C vent, whether that be due to.
+28:38 : Amanda Chenery : Customs, approvals or minimal budget.
+28:46 : Amanda Chenery : We can pass that information through but we have to have, explicit approval from Brianna or Kelly.
+28:56 : Amanda Chenery : To make sure that, that, that, that data is allowed to be loaded.
+29:04 : Amanda Chenery : If you already have a, as we captured our tagging and tracking IDs, we have a link here to the tagging and tracking tool where you can search for any individ any particular ID. So you can select whether you are looking for an activity ID, a drive to ID or an offer ID. Remember your activity ID.
+29:24 : Amanda Chenery : Should be unique for this particular upload so that we can understand what the marketing initiative would, but your drive to ID can be used across platforms which will just tell us the channel that was used to capture this information.
+29:42 : Amanda Chenery : And finally, we will capture the information relating to the vendor that you worked with. We have a dropdown list of standard vendors. If your vendor is not in that list, select the option for other and a new field will be displayed to show the new vendor name where you can write in the vendor name. We use this for audi.
+30:03 : Amanda Chenery : Purposes.
+30:05 : Amanda Chenery : For any queries that may happen from our contacts from those uploads.
+30:12 : Amanda Chenery : Once we've captured our tagging and tracking information and our event information, we can start entering our details into our template. Standard information about our contact, we can take their first and last name and email address. Currently, email.
+30:32 : Amanda Chenery : Is a mandatory field in the manual upload template. Job title is a free format, and a job title behind the scenes, we will take that information and try and align it to a job level and job department. These helps us in our profiling in our.
+30:52 : Amanda Chenery : Lead scoring model. If you're selecting a job level and a job department, they are not free format and must be from the list on the.
+31:05 : Amanda Chenery : It must be on a list. Oh, it must be from a standard list of values that are on the sheet standard list of values within the views template.
+31:19 : Amanda Chenery : We then start capturing the company information. Again, it is a mandatory field to have the company name and a country. The company name is a man is a free format field and the country is a standard list of values that must be in the correct format as per the list on the standard list of.
+31:38 : Amanda Chenery : Values sheet. We can capture other information relating to the company, and this gives us a better matching within CDF to be able to align this to a standard account and company that can be utilized within our audiences and any nurture journeys. Capturing.
+31:59 : Amanda Chenery : First line of address, city, state, and postcode, cap if you if although this information is not mandatory, the more information that you have will allow us to have a better match to align to the correct account.
+32:17 : Amanda Chenery : When we're uploading our phone information, when we CAPTCHA if you are capturing phone numbers.
+32:26 : Amanda Chenery : And you want the extension to be captured ensure it is in a separate field. If the data goes through to the VDC with an extension number within the phone number, we are not able to automatically call that person back, so they have to, this really see the sellers have to manually input the number. Keep.
+32:46 : Amanda Chenery : Keep the primary phone number as.
+32:53 : Amanda Chenery : Text. You can prefix it with a plus with the international code, but don't put any other characters in there.
+33:09 : Amanda Chenery : Also note a phone number is not always required. If you have the phone number, please put that information into the template. However, if you do not, we have processes in place where if we know this contact and we have the phone number on file, we are able to util.
+33:30 : Amanda Chenery : Please don't put things in, like, not applicable or unknown, only put the phone number in if you know it. But please put it in if you do know it.
+33:42 : Amanda Chenery : When we start looking at our privacy consent and opt in rules, from our manual upload template, we can opt our customers in to email and phone.
+33:56 : Amanda Chenery : Each answer on these will be a single Y and N or a blank. We leave the option blank if the customer only wants to be contacted about this specific activity. If you are unsure of the permission level, i. E. You do not have an audit trail to say.
+34:17 : Amanda Chenery : Really does want to be opted in to marketing communications. Leaving this field comp lank is completely safe because what we will do is capture that when the information is processed by Trey, CDF will tell us the latest opt in rules that we have for opt in permissions. We have for this particular.
+34:41 : Amanda Chenery : Only populate this field with a yes if you can explicitly.
+34:49 : Amanda Chenery : Confirm.
+34:51 : Amanda Chenery : That or or only select yes on this option.
+34:59 : Amanda Chenery : Only select yes on this option.
+35:06 : Amanda Chenery : If you have an audit trail.
+35:09 : Amanda Chenery : That we can utilize for if we have any complaints to say that the customer did ask to be opted in the future email communications and the same for phone.
+35:27 : Amanda Chenery : The exception we have to this is the Trace trade show and booth signage. If you have had, a privacy signage in your booth at a trade show.
+35:40 : Amanda Chenery : We will and you have denoted that on your general details in the muse template, then this field there is no need to populate this field. We will automatically select or opt these customers in to both email and phone for future marketing communications.
+36:03 : Amanda Chenery : We also have a field available for customer comments. Again, this, any information that you can put in here, this information is passed through to the VDC, and gives context to the seller of any conversations you may have had with that customer.
+36:21 : Amanda Chenery : And so the sales team can follow up with that information.
+36:29 : Amanda Chenery : When we look at our data entry depending on the information that you put on your initial tab relating to a single ID or multiple IDs, we can see in the first option, we've selected a single ID for the whole file. There is no need to enter.
+36:47 : Amanda Chenery : Enter this information.
+36:49 : Amanda Chenery : When the the lines are grayed out because it will automatically be populated behind the scenes. If however, you selected that you have multiple IDs, the activity ID and drive to ID will be highlighted in green to advise you that this is a mandatory field, and you can enter.
+37:10 : Amanda Chenery : Information on each individual row. This allows you to upload multiple.
+37:19 : Amanda Chenery : Actions against the same use case.
+37:25 : Amanda Chenery : If we have then information, again, single ID, if you have, if you have requested a sing, if you have stated, you have a single ID for the whole file, the EID will be grayed out and automatically populated behind the scenes. Again, if you have selected the option that all attende.
+37:45 : Amanda Chenery : Oh, all registrants attended the.
+37:50 : Amanda Chenery : Attended the event, again, that will be grayed out. You do not have to fill in this information. It will be automatically populated for you behind the scenes.
+37:59 : Amanda Chenery : If however, you said you had multiple event IDs within the one file, that field data fields for each individual customer will be highlighted in green to show that this is a mandatory field and must be populated.
+38:17 : Amanda Chenery : For non hand raisers, if the event has been attended, again, single file.
+38:34 : Amanda Chenery : This is wrong.
+38:38 : Amanda Chenery : Data entry attendance. So attendance flag.
+38:49 : Amanda Chenery : Okay change that slide.
+38:52 : Amanda Chenery : Slide.
+38:56 : Amanda Chenery : The non hand raisers, we have the single op we have the option for our event attended. Again, if your.
+39:05 : Amanda Chenery : If you denoted on the front page that all members of the event attended, then the event attended field will be grayed out. If you'd noted that s only specific member members attended the event, then the option, data entry details will be highlighted in green.
+39:25 : Amanda Chenery : To show that this is a mandatory field and must be fi must be added for each individual row manually.
+39:34 : Amanda Chenery : We have come additional compliance for some regions in APJC. We currently have rules for China. If your tact comes from China, we must ensure that we have captured information to say that they have agreed for cross border storage.
+39:54 : Amanda Chenery : And for us to share our data with Cisco affiliates and suppliers. You will see that if your country is stated as as China, these two questions will be highlighted in these two columns will be highlighted in green to show that this is a mandatory field and needs to be.
+40:14 : Amanda Chenery : Populated for this particular record. We have a combined consent for Korea and Vietnam and shortly to become India, that will, again, if your country is Vietnam, Korea Republic of Korea or India, then your indivi.
+40:35 : Amanda Chenery : Will be highlighted in green to show that this is a mandatory field and must be captured. If information is set as no, the file will be rejected as we are not able to store information relating to this customer.
+40:51 : Amanda Chenery : Again, we have.
+40:56 : Amanda Chenery : For trade shows when we have booth compliant site sorry privacy compliance suit signs in the booths, then.
+41:06 : Amanda Chenery : We automatically populate this information behind the scenes.
+41:14 : Amanda Chenery : Submitting your file.
+41:17 : Amanda Chenery : When you're ready to submit your file, go return back to the data entry, whatever the second file is. What's it called, General upload details. And you will see an option to say is your file ready for upload. We will do some mandatory checks behind the scenes to make sure that you have.
+41:37 : Amanda Chenery : Email and company and country populated for every row and activity drive to ID, offer ID for webinars, and then EID for trade show.
+41:50 : Amanda Chenery : What we also do is check our standard list of values for our job level, job department country, our email and phone opt ins. We have a standard list of values and any values that do not comply to a standard format will give an error. If you have a thumb, if you have a thumbs up.
+42:11 : Amanda Chenery : You're ready to prepa move to the next stage. If you have a thumbs down, you'll need to move to the tab six, the file validations, and locate where the specific rows and fields that have failed the checks.
+42:26 : Amanda Chenery : If we move to tab six, the file validations, any.
+42:33 : Amanda Chenery : Data that is a mandatory field, is populated correctly, we will show all clear no missing data and everything will be ok.
+42:43 : Amanda Chenery : That doesn't make any sense, and everything will, will be displayed. If however, you have any errors.
+42:52 : Amanda Chenery : The top row will TURN, first of all we will tell you the row in the file, that is incorrect, and a summary of what is wrong is a very high level summary. So for example, your job values, if it is a standard list of values, it means that we have most probably put a value in that is not in the s.
+43:12 : Amanda Chenery : NAT list of values, and the company name because it is not a standard list of values but it is missing.
+43:22 : Amanda Chenery : Need to change this sheet as well, so there's two I need to change.
+43:28 : Amanda Chenery : Once you have gone back and on your main sheet, you have a thumbs up, you are now ready to upload the manual upload request. The manual upload request form will ask you what you're uploading and will allow you to update your whole news template. At.
+43:47 : Amanda Chenery : At that point, MRM will take over and they will do some validations on the file, and then upload it and let you know when that has actually been done.
+44:01 : Amanda Chenery : So now we've shown you how the tool works and how eather, how we've tried to make it as easy as possible to know what information to populate. Let's talk about what happens to your budget, your campaign, and our sales team when things go wrong downsta, downstream.
+44:20 : Amanda Chenery : If we are using poor tagging, if we are missing or using an incorrect activity ID, our campaign attribution drops down. Each of our activity IDs are aligned to campaigns and programs, each of our drive to IDs are cap aligned to vehicles and each of our offer IDs are align.
+44:40 : Amanda Chenery : To specific content. If you are use it, if you're missing this information or using incorrect information, then that impacts your, your impact on any attribution models.
+44:59 : Amanda Chenery : The third one, investigation. I spelled that wrong as well. Standard compliance.
+45:12 : Amanda Chenery : What does this mean? Let's take a look I do here.
+45:17 : Amanda Chenery : So looking at.
+45:21 : Amanda Chenery : The quality of your data, for example, if you're having an event that information is passed down to our sellers, put in an event in saying supercompute in twenty twenty six event in saint Louise, completely tells our sellers what the customer actually attended. If you put something.
+45:41 : Amanda Chenery : Just as a Webex in Mumbai or a customer event, our sellers have no context as to what the customer actually attended and is very difficult for them to.
+45:53 : Amanda Chenery : Communicate and results into leading abandonment.
+46:01 : Amanda Chenery : Let's try this again.
+46:08 : Amanda Chenery : Let's do it. Right, so if we start looking at the impacts of the quality of the data that we're utilizing, using standard names that tells our our our sellers about the particular event, Ensure that.
+46:27 : Amanda Chenery : Because you know that this activity is aligned to a specific, event, doesn't mean everybody else does. Make sure that if somebody else is seeing this ID, they know exactly what it is for. This gives this, this description passes straight through to our seller.
+46:47 : Amanda Chenery : Which allows them to have immediate actionable intelligence to be able to have that communication with the customer.
+46:57 : Amanda Chenery : This also from a customer's perspective, protects our core corporate credibility. You are being con the customer is being contacted about a specific event, the sales member or or the seller from the VDC knows exactly what event you went to, and just shows that we are.
+47:18 : Amanda Chenery : A professional company and we know what we are contacting you about. On the other hand, if we start putting very basic information in like a, this is a customer event, what then happens is data goes through to the VDC, the seller looks at it and it's like, Yeah.
+47:37 : Amanda Chenery : Maybe I'll spend a few minutes and waste time going and looking for information about that event. This typically either ends in lean abandonment or with talking to the customer gives an unprofessional look as we say to him, oh, you went to a, a an event, but we.
+47:57 : Amanda Chenery : Nothing about what event that was and cannot have a constructive conversation with them.
+48:07 : Amanda Chenery : In multiple times we have covered this, the legal and trust risks of misclassification. We must have a clear understanding of whether you are uploading hand raisers or non hand raisers. Remember, if we.
+48:24 : Amanda Chenery : Are prosecuted for any of for violating any of these rules, there are steep finds that we have to pay, and we are now personally reliable personally liable for those.
+48:43 : Amanda Chenery : Errors.
+48:48 : Amanda Chenery : The next stage we will leave this information for you to read through. You do not have to do any of this further information. All of this processing is done by MRM and the details are in there for them. At this point, you will.
+49:09 : Amanda Chenery : The only interaction you will see is that no, at this point.
+49:16 : Amanda Chenery : We will whizz through we at this point we'll go through at a high level what MRM will do before they upload your data. They will do some data general data quality checks, the muse template will look for standard list of values and mandatory fields. M RM will look in a little bit more.
+49:39 : Amanda Chenery : They will then take the, use template and automatically populate populated is a tab called the manual upload template, and they will take that information and just upload that single file.
+49:56 : Amanda Chenery : They will use a tool that is related to Trey where they will select the data source and business use case that it has been added on the general upload details and they will submit the file form, processing.
+50:14 : Amanda Chenery : Any errors they will see errors and edit the file accordingly, and then they have a dashboard that will tell them what data has actually been processed. As data goes through.
+50:28 : Amanda Chenery : There is standard suppression rules where we check that this customer is not an employee or a partner. They have a surname and a company name, the customer's country is supported by the VDC, it's not a duplicate and the correct tagging and tracking IDs are present.
+50:47 : Amanda Chenery : When we, we also automatically within Trey will process for hand raisers if you are an opt in or an opt out country and we will determine whether the customer's latest opt ins and opt outs determine whether you are sales ready or not. If you are an opt in country, if you are not.
+51:06 : Amanda Chenery : Out country, we are ok to send information to you if you either have stated yes, you want to be opted out. Sorry, yes you want to have to, you want to be opted into marketing communications or the field is blank where you have neither said yes or no, for an opt income country, we must have a s an implicit y.
+51:27 : Amanda Chenery : Yes to say that we have opted in.
+51:33 : Amanda Chenery : We also have the ability to upload individual contacts and but again, this is typically done directly with M MRM.
+51:45 : Amanda Chenery : Where we, from an acquisition or through our privacy team where a customer has actually asked to be opted out.
+51:57 : Amanda Chenery : And just for reference, we have listed links here. This, this needs to be changed as well. Three sheets need to be changed.
+52:09 : Amanda Chenery : Manual uploads and Eloqua lead scoring, SharePoint sites. We have our campaign tagging and tracking, SharePoint site and manual URL builder. We have our VDC intake form, manual upload request form and demand intake tool, and the same for contact upload tool and con.
+52:29 : Amanda Chenery : Tact upload template. Instructions.
+52:34 : Amanda Chenery : That's the end. Stop.
+52:51 : Amanda Chenery : Thanks very much.
+52:53 : Amanda Chenery : That's.
+52:55 : Amanda Chenery : That's.
+
