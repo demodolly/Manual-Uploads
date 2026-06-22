@@ -214,7 +214,9 @@ The template runs validation checks. It checks mandatory fields such as email, c
 
 If you see a thumbs-up, the file has passed the template checks and can move to submission.
 
-If you see a thumbs-down, go to the file validations tab. The validation tab will show the row and field that need attention, along with a summary of the issue. Correct the data in the main entry tab, then rerun the validation.
+If you see a thumbs-down, go to the File Validation tab.
+
+On the File Validation tab, each validated column will show whether the data is clear or whether there are errors. Any errors will show the row from the Data Entry Details tab and a high-level summary of what needs to be corrected. After you fix all errors, return to the General Upload Details tab and the "is your file ready for upload" section should show a thumbs-up.
 
 The maximum file size is 6 MB. If your file is larger than that, contact MRM for guidance before submission.
 
