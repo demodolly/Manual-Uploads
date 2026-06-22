@@ -70,6 +70,8 @@ Together, the profile and engagement scores determine the routing outcome. High-
 
 Full details of the lead scoring model are available on the SharePoint site listed in the reference section at the end of this presentation.
 
+This slide also shows the comprehensive list of Eloqua transactions that are included in the scoring model, so you can see which types of customer engagement contribute to the overall score.
+
 ## The most important decision: hand raiser or non-hand raiser
 
 Before you start the template, decide whether the records are hand raisers or non-hand raisers.
