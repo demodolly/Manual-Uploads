@@ -164,6 +164,8 @@ For webinars, remember that offer ID is mandatory. It allows us to understand we
 
 For Cisco proprietary events, only hand raisers should be uploaded through this process. Non-hand raisers are normally integrated automatically through Cvent or RainFocus. If you cannot use those tools for your Cisco proprietary event, you may be able to upload non-hand raisers as trade shows, but only with explicit approval from Briana.
 
+If you are unsure of your campaign tagging and tracking ID, use the Campaign Tagging and Tracking tool to search for a valid ID.
+
 ## Entering contact and company data
 
 On the data entry tab, complete the required contact and company fields.
