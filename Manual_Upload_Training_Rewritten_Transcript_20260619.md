@@ -30,6 +30,22 @@ Third, it supports privacy compliance. We must be clear about whether a contact 
 
 Finally, it helps sellers have better conversations. When the activity ID, campaign details, and customer context are clear, sellers understand why they are contacting the customer and what the customer engaged with.
 
+## High Level Process
+
+At a high level, the manual upload process starts before you submit the file.
+
+First, confirm that your data is eligible for manual upload. If required, complete the privacy assessment, gather your campaign tagging and tracking IDs, include any event IDs, and make sure your contact details are ready.
+
+If you need help preparing the MUSE template, or if you have a large volume of data, complete the Demand Intake form. The MRM team will help make sure the template is populated correctly.
+
+If you are confident the template is complete and accurate, submit the Manual Upload Request form. In that request, select the use case you are uploading and attach the completed MUSE template.
+
+MRM will validate the template and prepare the data for upload into the Demand Intake Tool. From there, Tray processes the file, CDF cleanses and enriches contacts and accounts, and standard processing checks are applied. This includes validating IDs, appending additional data attributes, and running suppression rules to confirm whether records are sales ready.
+
+If the file contains hand raisers, and the records pass suppression rules, those leads are sent to the VDC for follow-up and to Eloqua for inclusion in the lead scoring model. If the file contains non-hand raisers, suppression rules still apply, but the records are passed only to Eloqua.
+
+Eloqua then runs the lead scoring model for each transaction. High-scoring leads are passed back to Tray, processed as warm non-hand raiser leads, and validated to determine whether they should be sent to the VDC.
+
 ## The most important decision: hand raiser or non-hand raiser
 
 Before you start the template, decide whether the records are hand raisers or non-hand raisers.
@@ -62,23 +78,6 @@ Before using manual upload, always check whether your data is already integrated
 - Manual content syndication is no longer required because that process is automated through the Integrate tool.
 
 If your use case does not fit one of the supported paths, contact MRM or the Manual Upload process owner before preparing the file. Do not force the data into a use case that does not match the customer journey.
-
-## High-level data journey
-
-Here is what happens after you prepare and submit your file.
-
-You start by completing the MUSE template. If you need help preparing the template, or if you have a large volume of records, submit the intake form so the MRM team can work with you and confirm downstream capacity.
-
-If your template is ready, upload it through the Manual Upload Request portal. The MRM team will review the file, complete required checks, and load the upload-ready data into the processing flow.
-
-From there, Tray validates and processes the records. It checks required fields, applies campaign tagging and tracking information, and runs suppression rules. The Demand Intake Tool is updated with the number of records that passed and failed, and you will receive an email with the same information.
-
-The routing then depends on the use case:
-
-- Hand raisers are sent for seller follow-up when they pass validation and suppression checks. They are also sent to Eloqua so the engagement can be included in lead scoring.
-- Non-hand raisers are sent to Eloqua for attribution and lead scoring. If the lead score is high enough, the record can be routed back through Tray and then sent for seller follow-up as a scored lead.
-
-This means manual upload is not just a file transfer. It affects attribution, scoring, reporting, suppression, and sales routing.
 
 ## What to prepare before completing the template
 
