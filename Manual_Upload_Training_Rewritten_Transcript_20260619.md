@@ -118,10 +118,6 @@ You also need campaign tagging and tracking information:
 - Offer ID: required for webinars and optional for some paid lead use cases.
 - Event ID: required when the upload relates to an event and should align to the event record in the global meetings and events process.
 
-If one ID applies to the full file, the template can populate that ID across all rows. If different records need different IDs, you must enter the correct ID on each row.
-
-You will also need vendor information. If the vendor is listed in the template, select it from the dropdown. If not, choose "Other" and enter the vendor name. This supports audit and follow-up if questions come from contacts after the upload.
-
 ## Completing the template
 
 Start on the general upload details tab.
