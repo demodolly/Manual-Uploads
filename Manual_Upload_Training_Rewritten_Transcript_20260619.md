@@ -20,18 +20,6 @@ The goal is simple: we want high-quality, compliant data that can support attrib
 
 Manual upload gives marketing teams a controlled way to submit eligible customer engagement data when that data is not already captured through an automated integration.
 
-Before we go further, there are a few general formatting and validation rules to keep in mind when using the template.
-
-First, make sure you know whether you are uploading hand raisers or non-hand raisers. That decision determines how the data is processed and whether it can be routed for sales follow-up.
-
-The maximum file size is 6 MB. When MRM uploads your file, they will only upload Sheet 4 - Demand Intake File, so the template structure must remain intact.
-
-Use only one use case per file. If you have more than one use case, prepare separate templates for each one.
-
-Activity IDs and drive-to IDs are mandatory in the file. These IDs are needed for processing, reporting, attribution, and seller context.
-
-When adding contact details, do not cut and paste data. Always copy and paste so formulas are not overwritten, and never delete columns or rows from the template.
-
 The tool helps us in four important ways.
 
 First, it standardizes the data we collect. The template guides you to provide the information needed for your specific use case, which reduces guesswork and manual errors.
@@ -131,6 +119,18 @@ You also need campaign tagging and tracking information:
 - Event ID: required when the upload relates to an event and should align to the event record in the global meetings and events process.
 
 As previously discussed, if you need help with the template, complete the Demand Intake form and work with MRM. If your file is ready to be uploaded, attach the completed MUSE template in the Manual Upload Request form.
+
+Before we go further, there are a few general formatting and validation rules to keep in mind when using the template.
+
+First, make sure you know whether you are uploading hand raisers or non-hand raisers. That decision determines how the data is processed and whether it can be routed for sales follow-up.
+
+The maximum file size is 6 MB. When MRM uploads your file, they will only upload Sheet 4 - Demand Intake File, so the template structure must remain intact.
+
+Use only one use case per file. If you have more than one use case, prepare separate templates for each one.
+
+Activity IDs and drive-to IDs are mandatory in the file. These IDs are needed for processing, reporting, attribution, and seller context.
+
+When adding contact details, do not cut and paste data. Always copy and paste so formulas are not overwritten, and never delete columns or rows from the template.
 
 ## Completing the template
 
