@@ -180,9 +180,7 @@ Job title is free format. Job level and job department must use the standard lis
 
 Address details such as address line, city, state, and postal code are not always mandatory, but they improve account matching and data quality.
 
-If you provide a phone number, keep the phone number and extension in separate fields. Use a clean phone number format, ideally including the international country code. Do not enter values such as "unknown," "not applicable," or placeholder text. If you do not have a phone number, leave the field blank.
-
-Do not cut cells, move columns, delete rows, or change the structure of the template. Enter or paste values into the fields provided so the formulas and validations continue to work.
+If you provide a phone number, keep the phone number and extension in separate fields. Use a clean phone number format, ideally including the international country code. If you do not have a phone number, leave the field blank so CDF or DNS can provide the most up-to-date value we have for the contact. Do not enter text values such as "unknown" or "NA," because they can overwrite a valid phone number we already have on file.
 
 ## Privacy consent and opt-in fields
 
