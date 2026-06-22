@@ -142,6 +142,14 @@ Next, select the correct data source and use case. This selection matters becaus
 
 Items shown in grey are for information only. The business use case explains what will happen to your data after upload, while the upload information is mainly for MRM. MRM uses it to load the data into the Demand Intake Tool, which has a mapping structure that is less user-friendly than the MUSE template.
 
+For webinars, there are a few additional questions. As with every upload, select the correct use case and data source, and remember that all use cases except Cisco proprietary events require a privacy ID.
+
+The template will ask whether your webinar registration was run through Cvent or PathFactory. If it was, do not use the MUSE template because that webinar data is integrated directly into Eloqua from the source.
+
+If your registrations were run through Webex, the registrations are also integrated into Eloqua automatically. In that case, only use the MUSE template for attendance records, and make sure the EID matches the registration data.
+
+Webinar data from other platforms can be uploaded through the Manual Upload process.
+
 Enter the transaction date. Manual uploads must be submitted within 30 days of the event or engagement. Records outside that window may be rejected because they are no longer considered viable for standard processing.
 
 Then enter the required IDs. If one activity ID, drive-to ID, offer ID, or event ID applies to all records, select that option and let the template populate the rows for you. If the file contains multiple activities or events, select the multiple-ID option and complete the highlighted mandatory fields row by row.
