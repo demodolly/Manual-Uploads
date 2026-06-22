@@ -46,6 +46,16 @@ If the file contains hand raisers, and the records pass suppression rules, those
 
 Eloqua then runs the lead scoring model for each transaction. High-scoring leads are passed back to Tray, processed as warm non-hand raiser leads, and validated to determine whether they should be sent to the VDC.
 
+## Architecture - The End to End Journey
+
+This slide shows where your data is stored and how it moves through the end-to-end process.
+
+When Tray processes hand raisers for Cisco proprietary events, paid leads, webinars, and trade shows, valid leads are passed to SFDC for sales follow-up. Those same transactions are also sent to the Eloqua Transaction CDO so they can be included in marketing history and lead scoring.
+
+For non-hand raisers from trade shows and webinars, the records are stored in the Eloqua Registration CDO. These records are not sent directly to sales, but they are still captured for attribution and scoring.
+
+In both paths, the transaction is captured in CDF and processed into the lead scoring model. This ensures the engagement contributes to the customer's overall score and can support future routing if the lead becomes sales ready.
+
 ## The most important decision: hand raiser or non-hand raiser
 
 Before you start the template, decide whether the records are hand raisers or non-hand raisers.
