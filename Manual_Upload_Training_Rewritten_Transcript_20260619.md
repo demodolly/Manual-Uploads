@@ -56,6 +56,20 @@ For non-hand raisers from trade shows and webinars, the records are stored in th
 
 In both paths, the transaction is captured in CDF and processed into the lead scoring model. This ensures the engagement contributes to the customer's overall score and can support future routing if the lead becomes sales ready.
 
+## Deep Dive - The Lead Scoring Model
+
+At a high level, the lead scoring model uses a two-layered approach.
+
+Each lead is evaluated using a matrix that combines a profile score and an engagement score. The profile score is graded from A to D, and the engagement score is graded from 1 to 4, with each score moving in 25-point increments.
+
+The profile score is based on explicit data. This is factual information provided by the customer or known about the contact, such as decision-maker status, job level, department, and whether the email domain is corporate or private.
+
+The engagement score is based on implicit data. This is passively observed activity that helps us infer buyer intent, such as web page visits, form submissions, event attendance, manual uploads, and email activity.
+
+Together, the profile and engagement scores determine the routing outcome. High-scoring combinations, shown in white on the slide, route quickly to SFDC as actionable leads. Lower-scoring combinations remain in Eloqua for continued nurturing until additional engagement or profile changes increase the score.
+
+Full details of the lead scoring model are available on the SharePoint site listed in the reference section at the end of this presentation.
+
 ## The most important decision: hand raiser or non-hand raiser
 
 Before you start the template, decide whether the records are hand raisers or non-hand raisers.
