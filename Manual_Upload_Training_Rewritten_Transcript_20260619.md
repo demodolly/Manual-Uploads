@@ -166,6 +166,8 @@ For Cisco proprietary events, only hand raisers should be uploaded through this 
 
 If you are unsure of your campaign tagging and tracking ID, use the Campaign Tagging and Tracking tool to search for a valid ID.
 
+For all uploads, capture the vendor you worked with. Select the vendor from the dropdown list. If your vendor is not listed, select "Other" and enter the vendor name in the new Vendor Name field.
+
 ## Entering contact and company data
 
 On the data entry tab, complete the required contact and company fields.
