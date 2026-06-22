@@ -208,7 +208,7 @@ For event non-hand raisers, you must state whether each contact attended the eve
 
 ## Validating the file
 
-When the file is ready, return to the general upload details tab and mark the file as ready for upload.
+When the file is ready, return to the general upload details tab and check the "is your file ready to upload" section.
 
 The template runs validation checks. It checks mandatory fields such as email, company, country, activity ID, drive-to ID, and use-case-specific fields such as offer ID or event ID. It also checks standard list of values for fields such as country, job level, job department, and opt-in responses.
 
