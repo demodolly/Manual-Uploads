@@ -118,6 +118,8 @@ You also need campaign tagging and tracking information:
 - Offer ID: required for webinars and optional for some paid lead use cases.
 - Event ID: required when the upload relates to an event and should align to the event record in the global meetings and events process.
 
+As previously discussed, if you need help with the template, complete the Demand Intake form and work with MRM. If your file is ready to be uploaded, attach the completed MUSE template in the Manual Upload Request form.
+
 ## Completing the template
 
 Start on the general upload details tab.
