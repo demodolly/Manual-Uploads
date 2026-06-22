@@ -142,7 +142,9 @@ Next, select the correct data source and use case. This selection matters becaus
 
 Items shown in grey are for information only. The business use case explains what will happen to your data after upload, while the upload information is mainly for MRM. MRM uses it to load the data into the Demand Intake Tool, which has a mapping structure that is less user-friendly than the MUSE template.
 
-For webinars, there are a few additional questions. As with every upload, select the correct use case and data source, and remember that all use cases except Cisco proprietary events require a privacy ID.
+All use cases that are not Cisco proprietary events need a privacy ID to ensure our data uploads comply with Cisco privacy rules.
+
+For webinars, there is an additional question. As with every upload, select the correct use case, data source, and privacy ID.
 
 The template will ask whether your webinar registration was run through Cvent or PathFactory. If it was, do not use the MUSE template because that webinar data is integrated directly into Eloqua from the source.
 
