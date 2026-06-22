@@ -198,6 +198,14 @@ Leaving the field blank is safer than guessing. During processing, the latest co
 
 Some regions have additional consent requirements. For China, cross-border storage and data sharing consent fields may be required. For Korea, Vietnam, and India, combined consent requirements may apply. If the country triggers these fields, the template will highlight them as mandatory. If required consent is missing or set to no, the record may be rejected because we cannot store or process the data.
 
+The comments field is passed downstream to the seller in the VDC. Use it to share relevant conversations or context that can help the seller start a more informed conversation with the customer.
+
+On the General Upload Details tab, if you indicate that an ID applies to the whole file, that field will be greyed out on the Data Entry Details tab and automatically populated on the Demand Intake Template tab. If you indicate that multiple IDs apply within the same use case, the relevant fields on the Data Entry Details tab will be highlighted in green, which means a value must be entered for each contact record.
+
+For event hand raisers, an event ID is mandatory. If one event ID applies to the whole file, the column will be greyed out and automatically populated on the Demand Intake Template tab. If there are multiple event IDs for the same use case, the field will be highlighted in green and must be completed for each contact.
+
+For event non-hand raisers, you must state whether each contact attended the event. If you indicated on the General Upload Details tab that all event members attended, the attendance field will be greyed out and automatically populated on the Demand Intake Template tab. If not all registrants attended, the field will be highlighted in green and you must enter "Y" or "N" on each row to show which contacts attended.
+
 ## Validating the file
 
 When the file is ready, return to the general upload details tab and mark the file as ready for upload.
