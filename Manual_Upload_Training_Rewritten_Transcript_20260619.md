@@ -140,6 +140,8 @@ Select whether you are uploading hand raisers or non-hand raisers. The template 
 
 Next, select the correct data source and use case. This selection matters because it drives the downstream processing path and supports attribution reporting.
 
+Items shown in grey are for information only. The business use case explains what will happen to your data after upload, while the upload information is mainly for MRM. MRM uses it to load the data into the Demand Intake Tool, which has a mapping structure that is less user-friendly than the MUSE template.
+
 Enter the transaction date. Manual uploads must be submitted within 30 days of the event or engagement. Records outside that window may be rejected because they are no longer considered viable for standard processing.
 
 Then enter the required IDs. If one activity ID, drive-to ID, offer ID, or event ID applies to all records, select that option and let the template populate the rows for you. If the file contains multiple activities or events, select the multiple-ID option and complete the highlighted mandatory fields row by row.
