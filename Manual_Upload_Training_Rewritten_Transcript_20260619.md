@@ -250,6 +250,8 @@ During processing, Tray applies suppression and routing rules. These can include
 
 For hand raisers, Tray also checks the customer's consent status and country rules to determine whether the record is sales ready. Only records that pass the required checks continue through the appropriate sales routing path.
 
+Reference material for this training is documented in the links provided here, including the SharePoint sites, tools, and process guidance you need to successfully upload data through the Manual Upload process.
+
 ## Closing
 
 To summarize:
